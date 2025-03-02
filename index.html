@@ -7,11 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk&display=swap');
-      </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .ubuntu{
+      font-family: 'Ubuntu', sans-serif;
+    }
+  </style>
   </head>
   <body>
     <!-- TOP BAR -->
@@ -83,25 +91,25 @@
 
       <nav class="relative bg-white shadow-lg cursor-pointer">
         <div class="flex items-center justify-between px-4">
-          <div class="w-[18%]">
-            <img src="./Images/saylani-logo.png" alt="" />
+          <div class="w-[15%]">
+            <img src="./Images/saylani-logo.png" alt=""/>
           </div>
           <div>
-            <ul class="flex">
-              <li class="relative px-3 py-6 group"><a href="#" class="font-semibold">About</a>
-                <ul class="hidden group-hover:flex justify-evenly absolute bg-[#97cf47] text-white top-[100%] left-0 flex-col shadow-lg px-6 py-2 capitalize font-semibold">
-                  <li class="py-2"><a href="#">Introduction</a></li>
-                  <li class="py-2"><a href="#">Chairman Message</a></li>
-                  <li class="py-2"><a href="#">Audit Reports</a></li>
-                  <li class="py-2"><a href="#">Tax Exemption center</a></li>
+            <ul class="flex text-[15px] gap-8">
+              <li class="relative py-6 group"><a href="#" class="pb-1 font-medium text-slate-700 hover:border-b-2 hover:border-blue-500">About</a>
+                <ul class="hidden group-hover:flex justify-evenly absolute text-slate-800 bg-white top-[90%] -left-11 flex-col shadow-lg py-4 capitalize text-[15px] font-medium ubuntu">
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">Introduction</a></li>
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">Chairman Message</a></li>
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">Audit Reports</a></li>
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">Tax Exemption certificate</a></li>
                 </ul>
               </li>
-              <li class="px-3 py-6 group">
-                <a href="#" class="font-semibold">Services</a>
-                <ul class="hidden group-hover:flex justify-evenly absolute opacity-100 w-full top-[100%] left-0 shadow-lg py-7 bg-[#0d6db7] text-white ">
+              <li class="py-6 group">
+                <a href="#" class="pb-1 font-medium text-slate-700 hover:border-b-2 hover:border-blue-500">Services</a>
+                <ul class="hidden group-hover:flex justify-evenly absolute opacity-100 w-full top-[100%] left-0 shadow-lg py-7 bg-white  text-black font-poppins text-[15px] px-10 gap-10">
                   <li>
-                    <a href="#" class="px-2 text-[20px] font-semibold">Health</a>
-                    <ul class="px-2 leading-5 capitalize border-r-4 border-gray-200 w-44">
+                    <a href="#" class="text-xl font-medium ubuntu">Health</a>
+                    <ul class="leading-5 capitalize">
                       <li class="py-2"><a href="#">Health department</a></li>
                       <li class="py-2"><a href="#">mother and child care center</a></li>
                       <li class="py-2"><a href="#">blood bank and thalassemia center</a></li>
@@ -111,17 +119,17 @@
                       <li class="py-2"><a href="#">X-Ray & ultrasound</a></li>
                     </ul>
                   </li>
-                  <li><a href="#" class="px-2 font-semibold">Education</a>
-                    <ul class="px-2 leading-5 capitalize border-r-4 border-gray-200 w-44">
+                  <li><a href="#" class="text-lg font-medium ubuntu">Education</a>
+                    <ul class="leading-5 capitalize">
                       <li class="py-2"><a href="#">Saylani schooling system</a></li>
-                      <li class="py-2"><a href="#">Vocational Training</a></li>
+                      <li class="py-2"><a href="#">Vocational Training <span class="text-[11px]"><i class="fa-solid fa-chevron-right"></i><i class="hidden fa-solid fa-chevron-down"></i></span></a></li>
                       <li class="py-2"><a href="#">Technical education </a></li>
                       <li class="py-2"><a href="#">islamic education</a></li>
                       <li class="py-2"><a href="#">Accounting and finance</a></li>
                     </ul>
                   </li>
-                  <li><a href="#" class="px-2 font-semibold">Food</a>
-                    <ul class="px-2 leading-5 capitalize border-r-4 border-gray-200 w-44">
+                  <li><a href="#" class="text-lg font-medium ubuntu">Food</a>
+                    <ul class="leading-5 capitalize">
                       <li class="py-2"><a href="#">Family supportation</a></li>
                       <li class="py-2"><a href="#">saylani dusterkhwan</a></li>
                       <li class="py-2"><a href="#">saylani breakfast</a></li>
@@ -130,30 +138,30 @@
                       <li class="py-2"><a href="#">mezban saylani</a></li>
                     </ul>
                   </li>
-                  <li><a href="#" class="px-2 font-semibold">Sadiqah Jariah</a>
-                    <ul class="w-40 px-2 leading-5 capitalize border-r-4 border-gray-200">
+                  <li><a href="#" class="text-lg font-medium ubuntu">Sadiqah Jariah</a>
+                    <ul class="leading-5 capitalize">
                       <li class="py-2"><a href="#">construction of masjid</a></li>
                       <li class="py-2"><a href="#">clean drinking water</a></li>
                       <li class="py-2"><a href="#">plantation-green pakistan</a></li>
                     </ul>
                   </li>
-                  <li><a href="#" class="px-2 font-semibold">Social Welfare</a>
-                    <ul class="w-40 px-2 leading-5 capitalize border-r-4 border-gray-200">
+                  <li><a href="#" class="text-lg font-medium ubuntu">Social Welfare</a>
+                    <ul class="leading-5 capitalize">
                       <li class="py-2"><a href="#">kafalat program</a></li>
                       <li class="py-2"><a href="#">wedding support program</a></li>
                       <li class="py-2"><a href="#">apna karobaar</a></li>
                       <li class="py-2"><a href="#">saylani job bank</a></li>
                     </ul>
                   </li>
-                  <li><a href="#" class="px-2 font-semibold">Disaster aid</a>
-                    <ul class="px-2 leading-5 capitalize border-r-4 border-gray-200 w-36">
+                  <li><a href="#" class="text-lg font-medium ubuntu">Disaster aid</a>
+                    <ul class="leading-5 capitalize">
                       <li class="py-2"><a href="#">corona relief program</a></li>
                       <li class="py-2"><a href="#">flood and rain relief program</a></li>
                       <li class="py-2"><a href="#">fire fighting</a></li>
                     </ul>
                   </li>
-                  <li><a href="#" class="px-2 font-semibold">Saylani Ehsaas</a>
-                    <ul class="w-32 px-2 leading-5 capitalize">
+                  <li><a href="#" class="text-lg font-medium ubuntu">Saylani Ehsaas</a>
+                    <ul class="leading-5 capitalize">
                       <li class="py-2"><a href="#">Langar khana</a></li>
                       <li class="py-2"><a href="#">panah gaah</a></li>
                       <li class="py-2"><a href="#">koi bhooka na soye</a></li>
@@ -161,27 +169,27 @@
                   </li>
                 </ul>
               </li>
-              <li class="relative px-3 py-6 group"><a href="#" class="font-medium">Media</a>
-                <ul class="hidden group-hover:flex justify-evenly absolute text-white top-[100%] left-0 flex-col shadow-lg px-6 py-2 capitalize bg-[#97cf47] font-semibold">
-                  <li class="py-2"><a href="#">videos</a></li>
-                  <li class="py-2"><a href="#">books</a></li>
-                  <li class="py-2"><a href="#">news</a></li>
-                  <li class="py-2"><a href="#">blogs</a></li>
+              <li class="relative py-6 group"><a href="#" class="pb-1 font-medium text-slate-700 hover:border-b-2 hover:border-blue-500">Media</a>
+                <ul class="hidden group-hover:flex justify-evenly absolute top-[90%] -left-6 flex-col shadow-lg py-4 capitalize bg-white text-slate-800 text-[15px] font-medium ubuntu">
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">videos</a></li>
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">books</a></li>
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">news</a></li>
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">blogs</a></li>
                 </ul>
               </li>
-              <li class="relative px-3 py-6 group"><a href="#" class="font-medium">Contact Us</a>
-                <ul class="hidden group-hover:flex justify-evenly absolute text-white top-[100%] left-0 flex-col shadow-lg px-6 py-2 capitalize bg-[#97cf47] font-semibold">
-                  <li class="py-2"><a href="#">contact us</a></li>
-                  <li class="py-2"><a href="#">branches</a></li>
+              <li class="relative py-6 group"><a href="#" class="pb-1 font-medium text-slate-700 hover:border-b-2 hover:border-blue-500">Contact Us</a>
+                <ul class="hidden group-hover:flex justify-evenly absolute top-[90%] -left-6 flex-col shadow-lg py-4 capitalize bg-white text-slate-800 text-[15px] font-medium ubuntu">
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">contact us</a></li>
+                  <li class="px-6 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">branches</a></li>
                 </ul>
               </li>
-              <li class="px-3 py-6"><a href="#" class="font-medium">Bank Details</a></li>
-              <li class="relative px-3 py-6 group"><a href="#" class="font-medium">Other Websites</a>
-                <ul class="hidden group-hover:flex justify-evenly absolute text-white top-[100%] left-0 flex-col shadow-lg px-6 py-2 capitalize bg-[#97cf47] font-semibold">
-                  <li class="py-2"><a href="#">saylani UK</a></li>
-                  <li class="py-2"><a href="#">saylani USA</a></li>
-                  <li class="py-2"><a href="#">saylani canada</a></li>
-                  <li class="py-2"><a href="#">saylani turkey</a></li>
+              <li class="py-6"><a href="#" class="pb-1 font-medium text-slate-700 hover:border-b-2 hover:border-blue-500">Bank Details</a></li>
+              <li class="relative py-6 group"><a href="#" class="pb-1 font-medium text-slate-700 hover:border-b-2 hover:border-blue-500">Other Websites</a>
+                <ul class="hidden group-hover:flex justify-evenly absolute top-[90%] -left-4 flex-col shadow-lg py-4 capitalize bg-white text-slate-800 text-[15px] font-medium ubuntu">
+                  <li class="px-8 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">saylani UK</a></li>
+                  <li class="px-8 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">saylani USA</a></li>
+                  <li class="px-8 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">saylani canada</a></li>
+                  <li class="px-8 py-2 hover:bg-[#8dc63f] hover:text-white"><a href="#">saylani turkey</a></li>
                 </ul>
               </li>
             </ul>
@@ -192,12 +200,12 @@
           <div>
             <div class="flex gap-2">
               <div>
-                <button class="px-3 py-1 text-white bg-blue-500">
+                <button class="px-3 py-1 text-white bg-[#8dc63f]">
                   <a href="#">Donate Now</a>
                 </button>
               </div>
               <div>
-                <button class="px-3 py-1 text-white bg-black">
+                <button class="px-3 py-1 text-white bg-blue-500">
                   <a href="#">Be a sponsor</a>
                 </button>
               </div>
